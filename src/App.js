@@ -80,7 +80,6 @@ const App = () => {
       message,
       color,
       category, // add category to note
-      date: new Date().toISOString(),
     };
   
     setNotes([note, ...notes]);
@@ -169,11 +168,7 @@ const App = () => {
           <ul id="notes">
             {notes.filter(note => filter === 'All' || note.category === filter).map((note, index) => (
               <li key={index} className="note" style={{ backgroundColor: note.color }}>
-                <div className="note-date">
-  {note.date 
-    ? `${new Date(note.date).toLocaleDateString(undefined, { year: 'numeric', month: '2-digit', day: '2-digit' })}, ${new Date(note.date).toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' })}`
-    : ''}
-</div><h2>{note.title}</h2>
+                <h2>{note.title}</h2>
                 <p>{note.message}</p>
                 <h5>{note.category}</h5>
                 <button className="edit-button" onClick={() => editNote(index)}>Edit</button>
