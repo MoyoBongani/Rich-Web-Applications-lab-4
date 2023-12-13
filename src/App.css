@@ -1,0 +1,108 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#editor {
+  flex: 1;
+}
+
+#weather {
+  flex: 1;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+
+#editor-title {
+  text-align: center;
+}
+
+#title-input, #message-input, #color-select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#button {
+  text-align: center;
+}
+
+#create-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#create-button:hover {
+  background-color: #137217;
+}
+
+#notes-section {
+  width: 1000px;
+}
+
+.note {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.edit-button, .delete-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #137217;
+}
+
+.delete-button:hover {
+  background-color: #a31e14;
+}
+
+#filter-label {
+  font-size: 18px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#export-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #40abd2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#export-button:hover {
+  background-color: #133f72;
+}
+
+.note-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
